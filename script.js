@@ -4,6 +4,7 @@ const createDivForDivision = (a,b, submit) => {
     const ans = a/b;
     const div = document.createElement('div');
     div.innerText = a/b;
+    //hello guys
     document.querySelector('form').insertBefore(div,submit);
 }
 document.querySelector('#submitBtn').addEventListener('click', (e)=>{
@@ -12,3 +13,4 @@ document.querySelector('#submitBtn').addEventListener('click', (e)=>{
     b = document.querySelector('.second').value;
     createDivForDivision(a,b,e.target);
 });
+console.log('hello world')
